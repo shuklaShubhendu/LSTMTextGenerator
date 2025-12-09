@@ -196,4 +196,30 @@ for temp in [0.2, 0.4, 0.6, 0.8, 1.0]:
 # print(".................0.7................")
 # print(generate_text(300, 0.7))
 # print("..................1.................")
+
 # print(generate_text(300, 0.8))
+
+# Text generation function
+# def generate_text(length, temperature=1.0):
+#     start_index = random.randint(0, len(text) - SEQ_LENGTH - 1)
+#     seed_text = text[start_index: start_index + SEQ_LENGTH]
+#     generated_text = seed_text
+
+#     for _ in range(length):
+#         input_seq = np.array([char_to_index[char] for char in seed_text]).reshape(1, -1)
+#         predictions = model.predict(input_seq, verbose=0)[0]
+#         next_index = sample(predictions, temperature)
+#         next_char = index_to_char[next_index]
+
+#         generated_text += next_char
+#         seed_text = seed_text[1:] + next_char
+
+#     return generated_text
+
+# # Generate and print text with different temperatures
+# for temp in [0.2, 0.4, 0.6, 0.8, 1.0]:
+#     print(f"--- Generated Text (Temperature: {temp}) ---")
+#     print(generate_text(300, temperature=temp))
+#     print("\n")
+
+
